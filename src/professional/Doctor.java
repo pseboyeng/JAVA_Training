@@ -32,7 +32,7 @@ public final class Doctor extends MedicalProfessional {
 	}
 
 	public boolean verifySAMRCNumber() {
-		return MedicalCouncil.MedicalCouncil.getSAMRC().equalsIgnoreCase(samrcNumber);
+		return MedicalCouncil.MedicalCouncil.getSAMRC().equals(getSamrcNumber());
 	}
 
 	@Override
